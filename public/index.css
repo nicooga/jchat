@@ -1,0 +1,21 @@
+.form {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+form {
+  margin: 0;
+}
+
+.form legend {
+  margin-bottom: 10px;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-group:not(:last-child) {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "jchat",
+  "version": "0.0.0",
+  "description": "A simple chat built with NodeJS and React for educational purposes",
+  "main": "src/index.js",
+  "author": "Nicolas Oga <2112.oga@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^1.19.1"
+  }
+}

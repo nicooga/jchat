@@ -1,0 +1,54 @@
+html
+  head
+    link(rel='stylesheet' type='text/css' href='flexboxgrid.min.css')
+    link(rel='stylesheet' type='text/css' href='index.css')
+
+  body
+    .row
+      = flashMessage
+
+    .row
+      .col-xs-12
+        if user
+          | Bienvenido #{user.nick}
+          form(action='/logout' method='post')
+            button(type='submit') Logout
+
+    .row
+      .col-xs-6
+        .form
+          legend Logueate
+
+          form(action='/login' method='post')
+            .form-input-group
+              label Email
+              input(name='email_or_nick' required)
+
+            .form-input-group
+              label Password
+              input(name='password' type='password' required)
+
+            button(type='submit') Login
+
+      .col-xs-6
+        .form
+          legend Registrate
+
+          form(action='/register' method='post')
+            .form-input-group
+              label Nick
+              input(name='nick' required)
+
+            .form-input-group
+              label Email
+              input(name='email' required)
+
+            .form-input-group
+              label Password
+              input(name='password' type='password' required)
+
+            .form-input-group
+              label Password Confirmation
+              input(name='password_confirmation' type='password' required)
+
+            button(type='submit') Register

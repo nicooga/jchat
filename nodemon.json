@@ -1,0 +1,6 @@
+{
+  "signal": "SIGHUP",
+  "ext": "js",
+  "exec": "babel-node src/index.js",
+  "watch": ["src"]
+}
